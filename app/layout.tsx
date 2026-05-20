@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "前世偉人タイプ診断",
   description: "20問の質問から、あなたの前世の偉人タイプを診断します。",
   verification: {
-    google: "2xCT19B-0fBb4zPOMiDfP",
+    google: "2xCT19B-0fBb4zP",
   },
 
 };
