@@ -299,7 +299,24 @@ export default function App() {
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-[#1D6FB8]/10 bg-white px-5 py-3 text-sm font-bold text-[#1D6FB8] shadow-sm"><BrainCircuit className="h-4 w-4" /> AIがあなたの魂に近い偉人を解析</div>
                 <h1 className="text-5xl font-black leading-[1.02] tracking-tight md:text-7xl">あなたの前世は、<span className="block text-[#1D6FB8]">どの偉人キャラ？</span></h1>
                 <p className="mt-6 max-w-2xl text-base leading-8 text-[#446985] md:text-lg">青くやわらかいギャラリー風デザインで、20人の偉人キャラクターからあなたのタイプを診断します。結果画面では、MBTI診断のように詳しい性格解説・相性・人生戦略・恋愛傾向・仕事向きまで読めます。</p>
-                <div className="mt-8 flex flex-col gap-4 sm:flex-row"><button onClick={() => setStarted(true)} className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#123C69] px-8 py-4 text-base font-black text-white shadow-lg transition hover:-translate-y-1">診断をはじめる <ChevronRight className="h-5 w-5 transition group-hover:translate-x-0.5" /></button><div className="inline-flex items-center justify-center rounded-full border-2 border-[#123C69]/10 bg-white px-6 py-4 text-sm font-bold text-[#446985] shadow-sm">20タイプ / 約1分 / 1000字級結果</div></div>
+                <div className="mt-8 flex flex-col gap-4 sm:flex-row"><button onClick={() => setStarted(true)} className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#123C69] px-8 py-4 text-base font-black text-white shadow-lg transition hover:-translate-y-1">診断をはじめる <ChevronRight className="h-5 w-5 transition group-hover:translate-x-0.5" /></button><div className="inline-flex items-center justify-center rounded-full border-2 border-[#123C69]/10 bg-white px-6 py-4 text-sm font-bold text-[#446985] shadow-sm">20タイプ / 約1分 / 1000字級結果</div></div><div className="mt-6 rounded-[28px] border-2 border-[#123C69]/10 bg-white p-5 shadow-sm">
+  <div className="mb-3 inline-flex rounded-full bg-[#EAF7FF] px-3 py-1 text-xs font-black text-[#1D6FB8]">
+    PR
+  </div>
+
+  <p className="text-sm leading-7 text-[#446985]">
+    ここから先は外部の成人向けコンテンツを含むサイトへ移動します。
+  </p>
+
+  <a
+    href="https://al.fanza.co.jp/?lurl=https%3A%2F%2Fwww.dmm.co.jp%2Flitevideo%2F-%2Fdetail%2F%3D%2Fcid%3Dsnos00149%2F&af_id=Mitsumata-002&ch=toolbar&ch_id=text"
+    target="_blank"
+    rel="sponsored nofollow noopener noreferrer"
+    className="mt-4 inline-flex items-center justify-center rounded-full bg-[#123C69] px-6 py-3 text-sm font-black text-white transition hover:-translate-y-0.5"
+  >
+    外部サイトで見る
+  </a>
+</div>
                 <div className="mt-10 flex gap-4 overflow-x-auto pb-3">{figures.slice(0, 8).map((fig) => <div key={fig.id} className="min-w-[130px] rounded-[28px] bg-white p-3 shadow-sm"><img src={fig.image} alt={fig.name} className="h-24 w-full rounded-2xl object-cover" /><div className="mt-2 text-xs font-black">{fig.name}</div></div>)}</div>
               </div>
               <SoftCard className="p-5"><div className="rounded-[30px] p-5" style={{ background: `linear-gradient(135deg, ${figures[17].colorA}, ${figures[17].colorB})` }}><Pill>RESULT PREVIEW</Pill><img src={figures[17].image} alt={figures[17].name} className="mt-5 h-80 w-full rounded-[28px] bg-white/50 object-cover" /><div className="mt-5 rounded-[24px] bg-white/85 p-5"><div className="text-sm font-bold text-[#6EA7CE]">サンプル結果</div><div className="mt-1 text-3xl font-black text-[#123C69]">{figures[17].name}</div><div className="mt-2 font-bold text-[#446985]">{figures[17].title}</div></div></div></SoftCard>
